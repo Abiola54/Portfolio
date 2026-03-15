@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX, Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<main>
+    <div class="nav">
+        <div class="logo">AAI</div>
+
+        <nav class="navbuttons" id="navList">
+        <a href="index.html">Home</a>
+        <a href="Resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="Contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="nav-toggle" onclick="document.getElementById('navList').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <header class="contact-header">
+                    <!-- <p class="contact-label">Contact Me</p> -->
+                    <h2 class="contact-heading">Connect With Me</h2>
+                </header>
+
+                <!-- Content Grid -->
+                <div class="contact-grid">
+                    <!-- Left Card: Contact Form -->
+                    <div class="contact-card">
+                        <p class="form-title"> Feel Free to Contact Me!</p>
+                        <form class="contact-form" action="mailto:isholaabiola6@gmail.com" method="POST"
+                            enctype="text/plain">
+                            <!-- Name & Phone Row -->
+                            <div class="form-row">
+                            <input type="text" class="form-input" placeholder="Your Name" required> 
+                            
+                            <input type="tel" class="form-input" placeholder="Phone Number">
+
+                            <!-- Email -->
+                            <input type="email" class="form-input" placeholder="Email Address" required>
+
+                            <!-- Subject -->
+                            <input type="text" class="form-input" placeholder="Your Subject">
+
+                            <!-- Message -->
+                            <textarea class="form-textarea" placeholder="Your Message" required></textarea>
+                        <div>
+                            <button type="submit" class="contact-button"> Send Message</button>
+                        </div>
+                        </form>
+                        
+                    </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p class="map-description">
+                    This map shows my location in London, UK. 
+                    Feel free to reach out if you want to meet or discuss projects!
+                </p>
+        </div>
+         <div class="info-section">
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps?q=Mitcham&output=embed" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                                </iframe>
+                            </div>
+ </main>
+    <div class="footer">
+        Ishola Amidat Abiola &copy; 2025
+    </div>
+</body>
+</html>
