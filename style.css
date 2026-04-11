@@ -1554,6 +1554,19 @@ img {
         font-size: 1.4rem;
     }
 }
+
+.project-card-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 1.5rem;
+}
+
+.project-card-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
 /* ===== Resume ===== */
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
