@@ -1,0 +1,187 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body, .resume-wrap { font-family: var(--font-sans); color: var(--color-text-primary); background: transparent; }
+  .resume-wrap { max-width: 820px; margin: 0 auto; padding: 0 0 2rem; }
+  .dl-bar { display: flex; justify-content: flex-end; margin-bottom: 1rem; padding: 0.5rem 0; }
+  .dl-btn { background: transparent; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 8px 18px; font-size: 14px; cursor: pointer; color: var(--color-text-primary); display: flex; align-items: center; gap: 6px; }
+  .dl-btn:hover { background: var(--color-background-secondary); }
+  #resume-content { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2.5rem 2.5rem 2rem; }
+  .r-header { border-bottom: 2px solid var(--color-text-primary); padding-bottom: 1rem; margin-bottom: 1.25rem; }
+  .r-name { font-size: 26px; font-weight: 500; letter-spacing: 0.5px; margin-bottom: 0.35rem; }
+  .r-contact { font-size: 13px; color: var(--color-text-secondary); display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .r-contact a { color: var(--color-text-info); text-decoration: none; }
+  .section { margin-bottom: 1.4rem; }
+  .section-title { font-size: 12px; font-weight: 500; letter-spacing: 1.2px; text-transform: uppercase; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); padding-bottom: 4px; margin-bottom: 0.75rem; }
+  .section p, .section li { font-size: 13.5px; line-height: 1.65; color: var(--color-text-primary); }
+  .skill-row { margin-bottom: 0.3rem; font-size: 13.5px; line-height: 1.6; }
+  .skill-label { font-weight: 500; }
+  .entry { margin-bottom: 1rem; }
+  .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; margin-bottom: 2px; }
+  .entry-title { font-size: 14px; font-weight: 500; }
+  .entry-date { font-size: 12px; color: var(--color-text-secondary); white-space: nowrap; }
+  .entry-sub { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 4px; }
+  .entry ul { padding-left: 1.2rem; }
+  .entry li { font-size: 13.5px; line-height: 1.65; margin-bottom: 2px; }
+  .edu-entry { margin-bottom: 0.75rem; }
+  .interests { font-size: 13.5px; line-height: 1.65; font-style: italic; color: var(--color-text-secondary); }
+  .ref { font-size: 13px; color: var(--color-text-secondary); font-style: italic; }
+</style>
+
+<div class="resume-wrap">
+  <div class="dl-bar">
+    <button class="dl-btn" onclick="downloadResume()">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1v9M4 7l4 4 4-4M2 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Download PDF
+    </button>
+  </div>
+
+  <div id="resume-content">
+    <div class="r-header">
+      <div class="r-name">Amidat Abiola Ishola</div>
+      <div class="r-contact">
+        <span>London, UK</span>
+        <span>07833941098</span>
+        <a href="mailto:isholaabiola6@gmail.com">isholaabiola6@gmail.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Profile</div>
+      <p>A highly analytical and creative Web Developer currently pursuing an MSc in Web Development at the University of Roehampton. Bridging the gap between aesthetic design and functional code, I leverage a strong background in UI/UX design (Figma) and Python to build user-centric, accessible digital solutions. With professional experience as an IT Instructor and Product Designer, I possess a unique ability to translate complex technical requirements into intuitive interfaces. A proactive problem-solver committed to writing clean, scalable code and staying at the forefront of emerging web technologies.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skill-row"><span class="skill-label">Languages & Frameworks:</span> HTML, CSS, JavaScript, Python, SQL.</div>
+      <div class="skill-row"><span class="skill-label">Design & Prototyping:</span> Figma, UI/UX Design, Wireframing, User Research, Empathy Mapping.</div>
+      <div class="skill-row"><span class="skill-label">Tools & Platforms:</span> Git/GitHub, IoT Integration, Microsoft Office Suite, WordPress, Docker.</div>
+      <div class="skill-row"><span class="skill-label">Soft Skills:</span> Technical Mentorship, Agile Methodology, Stakeholder Management, Problem Solving.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-title">MSc Web Development</span>
+          <span class="entry-date">Sept 2025 – Sept 2026</span>
+        </div>
+        <div class="entry-sub">University of Roehampton, London</div>
+        <p style="font-size:13px; color: var(--color-text-secondary);">Relevant modules: Cyber-Security, Web Design, Database Systems, Front-end Frameworks, Software Development.</p>
+      </div>
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-title">Bachelor of Art Education</span>
+          <span class="entry-date">2018 – 2022</span>
+        </div>
+        <div class="entry-sub">University of Ilorin, Nigeria</div>
+      </div>
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-title">WAEC (Secondary Education)</span>
+          <span class="entry-date">2016</span>
+        </div>
+        <div class="entry-sub">Federal Government College Ogbomosho, Nigeria</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Relevant Tech & Design Experience</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">IT Instructor — Unites Integrated</span>
+          <span class="entry-date">Feb 2024 – Jan 2025</span>
+        </div>
+        <ul>
+          <li>Mentored students in Python programming, UI/UX design, and IoT integration, simplifying complex coding concepts for diverse learners.</li>
+          <li>Developed comprehensive curriculum materials covering wireframing, usability testing, and user-centered design principles.</li>
+          <li>Facilitated hands-on workshops that bridged the gap between hardware (IoT) and software interfaces.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Product Designer — SubSync (Remote)</span>
+          <span class="entry-date">Aug 2023 – Jan 2024</span>
+        </div>
+        <ul>
+          <li>Engineered UI/UX improvements that directly enhanced user engagement and streamlined the navigation flow.</li>
+          <li>Created high-fidelity interactive prototypes to visualize end-to-end user journeys.</li>
+          <li>Collaborated with developers to reduce concept-to-development time by providing precise design specifications and assets.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Product Design Intern — Zuri x L4G (Remote)</span>
+          <span class="entry-date">Oct 2022 – Apr 2023</span>
+        </div>
+        <ul>
+          <li>Utilized Figma to develop user personas, empathy maps, and journey maps to inform design decisions.</li>
+          <li>Conducted user research and feedback loops to iterate on designs, significantly improving product inclusivity and accessibility.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Additional Professional Experience</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Healthcare Support Worker — Verve Home Care / Velox Socialcare</span>
+          <span class="entry-date">Oct 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Managing complex care needs for individuals with autism and learning disabilities.</li>
+          <li>Demonstrating high levels of responsibility, patience, and clear communication in high-pressure environments.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Executive Assistant / Call Representative — AIU</span>
+          <span class="entry-date">Feb 2022 – Nov 2022</span>
+        </div>
+        <ul>
+          <li>Managed student inquiries regarding tuition and financial aid, maintaining a 95% response rate within 24 hours.</li>
+          <li>Optimized scheduling and follow-up processes to improve enrollment conversion rates.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Sales Executive — Allianz Insurance</span>
+          <span class="entry-date">Jan 2022 – May 2022</span>
+        </div>
+        <ul>
+          <li>Consulted with clients to provide tailored insurance solutions, building long-term professional relationships.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Interests</div>
+      <p class="interests">Passionate about Accessible Design (A11y), IoT innovations, and continuous learning through tech community meetups.</p>
+    </div>
+
+    <div class="section" style="margin-bottom: 0;">
+      <p class="ref">References available upon request.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+function downloadResume() {
+  const btn = document.querySelector('.dl-btn');
+  btn.textContent = 'Generating…';
+  const el = document.getElementById('resume-content');
+  const opt = {
+    margin: [10, 10, 10, 10],
+    filename: 'Amidat_Abiola_Ishola_Resume.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
+  html2pdf().set(opt).from(el).save().then(() => {
+    btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1v9M4 7l4 4 4-4M2 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Download PDF';
+  });
+}
+</script>
