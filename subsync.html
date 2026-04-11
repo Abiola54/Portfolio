@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="SubSync.css">
 </head>
 <body>
+
     <div class="nav">
         <div class="logo">AAI</div>
 
@@ -17,50 +19,53 @@
             <a href="Contact.html">Contact</a>
         </nav>
 
-        <<!-- Project Hero -->
-        <div class="part1">
-            <div class="text-container">
-                <div class="intro">
-                    <h1 class="project_title">SubSync</h1>
-                </div>
-                <p>
-                    A subscription manager app that helps users manage all their
-                    subscriptions in one convenient place. Simple, intuitive, and
-                    user-friendly interface for effortless tracking.
-                </p>
-                <div class="oak-tags">
-                    <span class="SubSync-tag">UI/UX Design</span>
-                    <span class="SubSync-tag">Figma</span>
-                    <span class="SubSync-tag">Mobile App</span>
-                    <span class="SubSync-tag">Dashboard</span>
-                </div>
-            </div>
+        <div class="nav-toggle" onclick="document.getElementById('navList').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
-            
+    <main class="container">
+
+        <!-- Project Hero -->
+        <div class="subsync-hero">
+            <h1>SubSync</h1>
+            <p>
+                A subscription manager app that helps users manage all their
+                subscriptions in one convenient place. Simple, intuitive, and
+                user-friendly interface for effortless tracking.
+            </p>
+            <div class="subsync-tags">
+                <span class="subsync-tag">UI/UX Design</span>
+                <span class="subsync-tag">Figma</span>
+                <span class="subsync-tag">Mobile App</span>
+                <span class="subsync-tag">Dashboard</span>
+            </div>
         </div>
 
         <!-- Overview -->
-        <div class="SubSync-overview">
-            <div class="SubSync-overview-card">
-                <p class="SubSync-label">Role</p>
+        <div class="subsync-overview">
+            <div class="subsync-overview-card">
+                <p class="subsync-label">Role</p>
                 <p>UI/UX Designer</p>
             </div>
-            <div class="SubSync-overview-card">
-                <p class="SubSync-label">Tools</p>
+            <div class="subsync-overview-card">
+                <p class="subsync-label">Tools</p>
                 <p>Figma</p>
             </div>
-            <div class="SubSync-overview-card">
-                <p class="SubSync-label">Type</p>
+            <div class="subsync-overview-card">
+                <p class="subsync-label">Type</p>
                 <p>Mobile App</p>
             </div>
-            <div class="SubSync-overview-card">
-                <p class="SubSync-label">Focus</p>
+            <div class="subsync-overview-card">
+                <p class="subsync-label">Focus</p>
                 <p>Subscription Tracking</p>
             </div>
         </div>
 
         <!-- About the Project -->
-        <div class="SubSync-section">
+        <div class="subsync-section">
             <p class="projects-tag">— About the Project —</p>
             <h3>What is SubSync?</h3>
             <p class="projects-sub">
@@ -69,13 +74,29 @@
                 users always know what they're paying for and when.
             </p>
         </div>
-     
-    <section class="project-images">
-        <img src="project/Features.png" alt="SubSync Feature 1">
-        <img src="project\Pricing.png" alt="SubSync Feature 2">
-    </section>
+
+        <!-- Project Images -->
+        <div class="project-images">
+            <div class="project-card-container">
+                <p class="subsync-img-label">Features</p>
+                <img src="project/Features.png" alt="SubSync Features" loading="lazy">
+            </div>
+            <div class="project-card-container">
+                <p class="subsync-img-label">Pricing</p>
+                <img src="project/Pricing.png" alt="SubSync Pricing" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Back to projects -->
+        <div class="subsync-back">
+            <a href="projects.html" id="button">← Back to Projects</a>
+        </div>
+
+    </main>
+
+    <div class="footer">
+        Ishola Amidat Abiola &copy; 2025
     </div>
-    
 
 </body>
 </html>
