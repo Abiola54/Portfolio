@@ -1532,6 +1532,18 @@ img {
         font-size: 1.4rem;
     }
 }
+.project-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.part1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 /* ===== Resume ===== */
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
