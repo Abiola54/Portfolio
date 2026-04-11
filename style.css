@@ -1353,6 +1353,10 @@ img {
 
 /* SubSync page */
 /* ===== SUBSYNC PAGE ===== */
+.subsync-hero {
+    max-width: 600px;
+    line-height: 1.7;
+}
 
 .subsync-tags {
     display: flex;
