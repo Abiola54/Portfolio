@@ -1,13 +1,27 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX, Web Developer</title>
+    <title>SubSync — Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SubSync.css">
 </head>
 <body>
-    <div class="back-btn">
-        <a href="projects.html">&larr; Back to Projects</a>
+    <div class="nav">
+        <div class="logo">AAI</div>
+
+        <nav class="navbuttons" id="navList">
+            <a href="index.html">Home</a>
+            <a href="Resume.html">Resume</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-toggle" onclick="document.getElementById('navList').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
 
