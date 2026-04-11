@@ -1351,32 +1351,15 @@ img {
     text-decoration: none;
 }
 
+/* SubSync page */
 /* ===== SUBSYNC PAGE ===== */
-
-.subsync-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 3rem 1.5rem 1rem;
-    gap: 1rem;
-}
-
-.subsync-hero h1 {
-    font-size: clamp(1.8rem, 5vw, 3rem);
-}
-
-.subsync-hero p {
-    max-width: 600px;
-    line-height: 1.7;
-}
 
 .subsync-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .subsync-tag {
@@ -1392,7 +1375,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -1436,14 +1419,6 @@ img {
     opacity: 0.75;
 }
 
-.project-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-
 .subsync-back {
     display: flex;
     justify-content: center;
@@ -1459,39 +1434,25 @@ img {
 }
 
 @media (max-width: 480px) {
+    .subsync-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .subsync-section h3 {
         font-size: 1.4rem;
     }
 }
 /* ===== EDU PAGE ===== */
 
-.dashboard-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 3rem 1.5rem 1rem;
-    gap: 1rem;
-}
-
-.dashboard-hero h1 {
-    font-size: clamp(1.8rem, 5vw, 3rem);
-}
-
-.dashboard-hero p {
-    max-width: 600px;
-    line-height: 1.7;
-}
-
-.dashboard-tags {
+.Edu-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
-.dashboard-tag {
+.Edu-tag {
     padding: 6px 14px;
     border-radius: 20px;
     border: 2px solid rgb(161, 2, 161);
@@ -1500,16 +1461,16 @@ img {
     white-space: nowrap;
 }
 
-.dashboard-overview {
+.Edu-overview {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.dashboard-overview-card {
+.Edu-overview-card {
     background-color: aliceblue;
     border-radius: 8px;
     padding: 1rem;
@@ -1519,14 +1480,14 @@ img {
     gap: 4px;
 }
 
-.dashboard-label {
+.Edu-label {
     font-weight: bold;
     font-size: 0.85rem;
     opacity: 0.7;
     letter-spacing: 1px;
 }
 
-.dashboard-section {
+.Edu-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1535,11 +1496,11 @@ img {
     padding: 1.5rem 1.5rem 0.5rem;
 }
 
-.dashboard-section h3 {
+.Edu-section h3 {
     font-size: 1.8rem;
 }
 
-.dashboard-img-label {
+.Edu-img-label {
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -1548,15 +1509,7 @@ img {
     opacity: 0.75;
 }
 
-.project-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.dashboard-back {
+.Edu-back {
     display: flex;
     justify-content: center;
     padding: 2.5rem 1rem 3rem;
@@ -1564,16 +1517,48 @@ img {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-    .dashboard-overview {
+    .Edu-overview {
         grid-template-columns: repeat(2, 1fr);
         padding: 1.5rem 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .dashboard-section h3 {
+    .Edu-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Edu-section h3 {
         font-size: 1.4rem;
     }
+}
+.part1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.text-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.text-container p {
+    width: 100%;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 /* ===== Resume ===== */
 
@@ -1941,46 +1926,4 @@ img {
     .oak-section h3 {
         font-size: 1.4rem;
     }
-}
-
-/* ===== LIGHTBOX ===== */
-.project-card-container img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    cursor: pointer;
-}
-
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox.active {
-    display: flex;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-.lightbox-close {
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    line-height: 1;
 }
