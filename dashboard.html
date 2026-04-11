@@ -1,12 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDU — Project</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dashboard.html">
+    <link rel="stylesheet" href="EDU.css">
 </head>
 <body>
+
     <div class="nav">
         <div class="logo">AAI</div>
 
@@ -16,7 +18,17 @@
             <a href="projects.html" class="active">Projects</a>
             <a href="Contact.html">Contact</a>
         </nav>
-<!-- Project Hero -->
+
+        <div class="nav-toggle" onclick="document.getElementById('navList').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- Project Hero -->
         <div class="part1">
             <div class="text-container">
                 <div class="intro">
@@ -70,3 +82,27 @@
                 monitor records, and manage everything from one place efficiently.
             </p>
         </div>
+
+        <!-- Project Images -->
+        <div class="project-images">
+
+            <div class="project-card-container">
+                <p class="dashboard-img-label">Dashboard Overview</p>
+                <img src="project/offficial dash.png" alt="EDU Dashboard" loading="lazy">
+            </div>
+
+        </div>
+
+        <!-- Back to projects -->
+        <div class="dashboard-back">
+            <a href="projects.html" id="button">← Back to Projects</a>
+        </div>
+
+    </main>
+
+    <div class="footer">
+        Ishola Amidat Abiola &copy; 2025
+    </div>
+
+</body>
+</html>
